@@ -4,4 +4,20 @@ prefix loc: <http://id.loc.gov/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 </bok/alice-i-underlandet> a bf:Work ;
-	bf:Title "Alice i underlandet"@sv .
+	bf:title [ a bf:WorkTitle ; 
+		bf:mainTitle "Alice i underlandet"@sv 
+	] ;
+	bf:translationOf </work/alice-in-wonderland> ;
+	bf:contribution [ a bf: Contribution ;
+                        bf:agent <person/Åke-runnqvist> ;
+                        bf:role lcrel:trl ;
+
+<person/Åke-runnqvist> a bf:Person .
+
+</work/alice-in-wonderland> a bf:Work .
+
+</bok/alice-i-underlandet> a bf:Instance ;
+	bf:title [ a bf:InstanceTitle ;
+                 bf:mainTitle "Alice i underlandet"@sv 
+	] ;
+	bf:instanceOf </instance/alice-in-wonderland> .
