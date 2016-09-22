@@ -6,20 +6,37 @@ prefix marc: <http://id.kb.se/marc/>
 prefix lcrel: <http://id.loc.gov/vocabulary/relators/>
 prefix lclang: <http://id.loc.gov/vocabulary/language/>
 
+#------ Fil: uttryck
 </bok/alice-i-underlandet> a bf:Text ;
 	bf:title [ a bf:WorkTitle ; 
 		bf:mainTitle "Alice i underlandet"@sv 
 	] ;
 	bf:translationOf </work/alices-adventures-in-wonderland> ;
 	bf:contribution [ a bf:Contribution ;
-                        bf:agent <person/Åke-runnqvist> ;
+                        bf:agent <person/åke-runnqvist> ;
                         bf:role lcrel:trl ;
                         ] ;
 	bf:language lclang:swe .
 
-<person/Åke-runnqvist> a bf:Person .
+#----- Fil: agent
 
-</work/alice-in-wonderland> a bf:Text .
+<person/åke-runnqvist> a bf:Person .
+
+#----- Fil: agent
+
+<person/carol-lewis> a bf:Person .
+
+#----- Fil: agent
+
+<person/tove-jansson> a bf:Person .
+
+
+#------- Fil: Verk (original)
+
+</work/alices-adventures-in-wonderland> a bf:Text .
+
+
+#------- Fil: Manifestation
 
 </bok1/alice-i-underlandet> a bf:Instance ;
 	bf:title [ a bf:InstanceTitle ;
