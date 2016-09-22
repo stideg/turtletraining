@@ -2,6 +2,7 @@ base <http://bibliotek.se>
 prefix bf: <http://id.loc.gov/ontologies/bibframe/>
 prefix loc: <http://id.loc.gov/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix marc: <http://id.kb.se/marc/>
 
 </bok/alice-i-underlandet> a bf:Work ;
 	bf:title [ a bf:WorkTitle ; 
